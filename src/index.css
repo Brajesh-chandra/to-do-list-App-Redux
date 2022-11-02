@@ -1,0 +1,194 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper{
+  max-width: 1440px;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.App{
+  background-color: #161a2b;
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 2.5em;
+  color: #fff;
+}
+
+.custom-form{
+  width: 400px;
+  height: auto;
+  margin: 20px auto;
+}
+
+.input-and-btn{
+  display: flex;
+}
+
+/* form-control is a class for input */
+.form-control{
+  width: 80%;
+  padding: 8px;
+  font-size: 16px;
+  border: 2px solid #5d0cff;
+  border-radius: 8px;
+  background: transparent;
+}
+
+.form-control:focus {
+  outline: none !important;
+  border: 2px solid #5d0cff;
+  color: #fff;
+}
+
+.add{
+  padding: 8px 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: linear-gradient(
+    90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+  );
+  color: #fff;
+  font-size: 18px;
+  margin-left: 10px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+/* .todo-box{
+  width: 400px;
+  margin: 1px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: aqua;
+  border-radius: 5px;
+} */
+
+.todo-box{
+  width: 400px;
+  padding: 6px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px;
+  border-radius: 8px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 118, 20, 1) 0%,
+    rgba(255, 84, 17, 1) 100%
+  );
+  color: #fff;
+}
+
+.todo-box:nth-child(4n + 1) {
+  background: linear-gradient(
+    90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+  );
+}
+
+.todo-box:nth-child(4n + 2) {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 12, 241, 1) 0%,
+    rgba(250, 0, 135, 1) 100%
+  );
+}
+
+.todo-box:nth-child(4n + 3) {
+  background: linear-gradient(
+    90deg,
+    rgba(20, 159, 255, 1) 0%,
+    rgba(17, 122, 255, 1) 100%
+  );
+}
+
+.todo-box .content{
+  display: flex;
+  align-items: center;
+  margin-left: 6px;
+}
+
+.todo-box .content p{
+  margin-top: 15px;
+  margin-left: 6px;
+}
+
+/* .todo-box span{
+  margin: 0 5px;
+} */
+
+/* .todo-box .actions-box .edit-icon{
+  margin: 25px 5px;
+}
+.todo-box .actions-box .delete-icon{
+  margin: 15px 5px;
+} */
+
+.todo-box .actions-box{
+  margin-top: 0px;
+  margin-right: 6px;
+}
+
+.actions-box{
+  cursor: pointer;
+}
+
+.actions-box .edit-icon{
+  /* color: orange; */
+  color: #fff;
+}
+
+.actions-box .delete-icon{
+  /* color: red; */
+  color: #fff;
+  margin-left: 8px;
+}
+
+.back-btn{
+  margin-top: 5px;
+  width: 100%;
+}
+
+.handleDelete-btn{
+  margin-top:5px ;
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+  justify-content: space-between;
+}
+
+ .delete-all{
+  width: 200px;
+  margin-left: 1px;
+  background-color: #5d0cff;
+}
+
+.deleteCompleted{
+  width: 200px;
+  margin-right: 1px;
+  color: #fff;
+  border-radius: 5px;
+  background-color: rgb(255, 0, 0);
+}
